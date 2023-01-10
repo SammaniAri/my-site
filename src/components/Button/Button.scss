@@ -1,0 +1,29 @@
+.button{
+	display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 0.6rem 1.5rem;
+gap: 1 6rem;
+margin:1.5rem;
+width:  10rem;
+height:  3rem;
+background: var(--yellow1);;
+border-radius:  1rem;
+box-shadow: 0  0.5rem  1rem 0 rgba(0,0,0,0.2), 0  0.3rem  1.25rem 0 rgba(0,0,0,0.19);
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+&:hover{
+	box-shadow: 0  0.75rem  1rem 0 rgba(0,0,0,0.24), 0 1.1rem  3.1rem 0 rgba(0,0,0,0.19);
+}
+&:active{
+	background: var(--yellow4);
+	box-shadow:  0.25rem 0.25rem 0rem var(--yellow3);
+	color: #000;
+	border:  0.05rem solid #000;
+}
+}
