@@ -1,6 +1,8 @@
 import React from "react";
 import "./Content.scss";
 import Button from "../Button/Button";
+ 
+
 const Content=()=>{
   return(
 		<div className="content">
@@ -12,17 +14,16 @@ const Content=()=>{
         </p>
 					</section> 
 				<section className="bottom">
-				<div> <Button>About Me </Button></div>
-				<div> <Button>Contact Me </Button></div>
+				<div> <Button type="button">About Me </Button></div>
+				<div> <Button type="button">Contact Me </Button></div>
 					</section> 
 			</section>
 
-			<section className="right"> 
+			<div className="right"> 
 <img className="image-background" src="ellipse1.svg" alt="background-art" />
-<section className="image"> 
 <img className="image" src="image1.svg" alt="photo-of-sammani" />
-</section>
-			</section>
+
+			</div>
 			 </div>
  
   );
