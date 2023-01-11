@@ -12,8 +12,8 @@ const Content=()=>{
         </p>
 					</section> 
 				<section className="bottom">
-				<div> <Button>About Me </Button></div>
-				<div> <Button>Contact Me </Button></div>
+				<div> <Button type="button">About Me </Button></div>
+				<div> <Button type="button">Contact Me </Button></div>
 					</section> 
 			</section>
 
