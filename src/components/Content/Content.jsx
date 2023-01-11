@@ -1,6 +1,8 @@
 import React from "react";
 import "./Content.scss";
 import Button from "../Button/Button";
+ 
+
 const Content=()=>{
   return(
 		<div className="content">
@@ -17,12 +19,11 @@ const Content=()=>{
 					</section> 
 			</section>
 
-			<section className="right"> 
+			<div className="right"> 
 <img className="image-background" src="ellipse1.svg" alt="background-art" />
-<section className="image"> 
 <img className="image" src="image1.svg" alt="photo-of-sammani" />
-</section>
-			</section>
+
+			</div>
 			 </div>
  
   );

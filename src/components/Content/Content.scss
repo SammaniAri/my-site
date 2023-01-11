@@ -8,8 +8,9 @@
   padding: 0rem  2.5rem;
   gap: 2rem;
   border-bottom:  0.12rem solid var(--black);
-  height: 50rem;
+  height: 35rem;
   width: 100%;
+   
 .left{
   .top{
     //background-color:rosybrown;
@@ -19,16 +20,24 @@
       }
       .bottom{
         display: flex;
+        flex-wrap: wrap;
         flex-direction: row;
         margin: 1.5rem;
     //background-color: pink;
       }
+      @media (max-width: 800px) {
+        width: 20rem;
+        height:20rem;
+        margin-top: 4rem;
+        margin-left: 1rem;
+      } 
 }
 .right{
   display: flex;
   justify-content: space-between;
   gap: 1rem;
   position: relative;
+   
 
   .image-background{
   flex:1;
@@ -41,16 +50,27 @@ animation-name: spin;
 animation-duration: 5000ms;
 animation-iteration-count: infinite;
 animation-timing-function: linear; 
+@media (max-width: 800px) {
+  width: 12rem;
+  height:12rem;
+} 
       }
+
       .image{
 position:  absolute;
 display: flex;
 width:  17rem;
-margin-top: 5rem;margin-left: 2rem;
+margin-top: 8rem;margin-left: 3rem;
 padding: 0rem  2.5rem;
+@media (max-width: 800px) {
+  width: 10rem;
+  height:10rem;
+  margin-top: 4rem;
+  margin-left: 1rem;
+} 
  
       }
-       
+             
 }
 @keyframes spin {
   from {
@@ -60,4 +80,7 @@ padding: 0rem  2.5rem;
       transform:rotate(360deg);
   }
 }
+@media (max-width: 800px) {
+   border-bottom: none;
+} 
 }
